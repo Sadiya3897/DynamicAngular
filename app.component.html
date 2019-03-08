@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+ Dynamic Table
+  </h1>
+</div>
+<div>
+  <table>
+    <tr>
+      <th *ngFor = "let item of head">
+        {{item}}
+      </th>
+    </tr>
+    <tbody>
+      <tr *ngFor = "let item1 of data ">
+        <td *ngFor = "let item of head ">
+          {{item1[item]}}
+        </td>
+      </tr>
+    </tbody>
+</table>
+</div>
+  
